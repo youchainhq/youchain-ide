@@ -26,7 +26,7 @@ Please install [YOUWallet](https://chrome.google.com/webstore/detail/youwallet/f
 
 ## Documentation
 
-To see details about how to use Remix for developing and/or debugging Solidity contracts, please see [our documentation page](https://developer.youchain.cc/zh/contract/solidity-compiler.html)
+To see details about how to use IDE for developing and/or debugging Solidity contracts, please see [our documentation page](https://dev.iyouchain.com/zh/contract/solidity-compiler.html)
 
 
 ## Links
