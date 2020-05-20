@@ -37,8 +37,7 @@
     "url-loader": "^1.1.1",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.7",
-    "youchain-solc": "0.0.5"
+    "webpack-dev-server": "^3.1.7"
   },
   "dependencies": {
     "ace-mode-solidity": "^0.1.1",
@@ -63,6 +62,7 @@
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0",
     "swarmgw": "^0.3.1",
+    "youchain-solc": "0.0.5",
     "youchain-utils": "^1.0.0-alpha.27",
     "youchain-you-contract": "^1.0.0-alpha.29"
   }
