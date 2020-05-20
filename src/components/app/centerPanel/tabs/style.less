@@ -1,0 +1,36 @@
+.centerpanel-tabs-wrapper{
+  min-height: 37px;
+  &>ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &>li{
+      margin-right: 15px;
+
+      &>a{
+        position: relative;
+        display: block;
+        padding: 8px 24px 5px 8px;
+        color:rgba(255,255,255,0.6);
+
+        &>label{
+          cursor:pointer;
+        }
+
+        &>i{
+          position: absolute;
+          right:8px;
+        }
+      }
+
+      &.active{
+        &>a{
+          background-color: #4c4e4f;
+          color:#fff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

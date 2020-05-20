@@ -1,0 +1,109 @@
+.rightpanel-deploy-wrapper{
+  input{
+    &.form-control{
+      background-color: #3c3c3c;
+      color:rgba(255,255,255,0.6);
+      border-color: transparent;
+
+      &:not(:disabled){
+        color:rgba(255,255,255,0.6);
+      }
+    }
+  }
+
+  &>section{
+    border:solid 1px rgba(255,255,255,0.6);
+    padding: 15px;
+    margin-bottom: 15px;
+
+    .gasLimit-region,
+    .value-region{
+      .form-group{
+        max-width: 120px;
+      }
+
+      .select-layout{
+        margin-left: 15px;
+        max-width: 100px;
+
+        .dropdown-content{
+          min-width: auto;
+          max-width: 100px;
+        }
+      }
+    }
+    .or-region{
+      display: inline-block;
+      min-width: 150px;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .actions-region{
+      margin-bottom: 0;
+      align-items: center;
+
+      &>.form-group:first-child{
+        flex:0;
+      }
+
+      &>.form-group:nth-child(2){
+        margin: 0 5px;
+
+        input{
+          height: 30px;
+        }
+      }
+
+      &>a{
+        color:rgba(255, 255, 255, 0.6) !important;
+      }
+    }
+
+    .inputs-region{
+      margin-bottom: 0;
+      display: block;
+      background-color: #141414;
+      padding: 10px;
+      border-radius: 3px;
+
+      &>div{
+        &:first-child{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+
+          &>a{
+            color:rgba(255, 255, 255, 0.6) !important;
+          }
+        }
+
+        &:nth-child(2){
+          &>section{
+            margin-bottom: 15px;
+          }
+        }
+
+        &:last-child{
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          &>a{
+            color:rgba(255, 255, 255, 0.6) !important;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .select-hint{
+    display: inline-block;
+    background-color: #95a5a6;
+    padding: 0 5px;
+    border-radius: 2px;
+    color: #fff;
+  }
+}

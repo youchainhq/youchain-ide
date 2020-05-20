@@ -1,0 +1,32 @@
+.page{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+
+  &>.dragbar{
+    position: absolute;
+    width: 2px;
+    top:0;
+    bottom:0;
+    border-right:solid 2px transparent;
+    cursor: col-resize;
+    z-index: 1;
+
+    &.left{
+      right:auto;
+    }
+
+    &.right{
+      border-left:solid 2px transparent;
+      border-right: none;
+      left:auto;
+    }
+  }
+
+  &>section{
+    min-height:100%;
+    overflow: hidden;
+  }
+}

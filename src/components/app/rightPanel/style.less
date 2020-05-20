@@ -1,0 +1,33 @@
+.rightpanel-wrapper{
+  padding: 10px 20px 10px 10px;
+  max-height: 100vh;
+  overflow-y: auto;
+
+  &>.tabs-wrapper{
+    margin-bottom: 38px;
+
+    &>ul{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      &>li{
+        margin-right: 15px;
+
+        &>a{
+          display: block;
+          padding: 8px;
+          color:rgba(255,255,255,0.6);
+        }
+
+        &.active{
+          &>a{
+            background-color: #4c4e4f;
+            color:#fff;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+*, button, input,textarea, i, a {
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:active,
+*:hover {
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+*{
+  //-webkit-touch-callout: none;
+  //-webkit-user-select: none;
+  //-moz-user-select:none;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #b3b3b3;
+  max-height: 30px;
+  //-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  width: 6px;
+  height: 6px;
+  background-color: #7a7a7a;
+}
+
+input,
+textarea{
+  -webkit-user-select: auto;
+}
+
+html {
+  overflow-x: ~"hidden\0/";
+  -ms-overflow-style: none;
+  height: 100%;
+}
+
+body {
+  font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft Yahei', sans-serif;
+  background-color: #313335;
+  color:rgba(255,255,255,0.6);
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active,
+  &:disabled{
+    opacity: 0.5;
+  }
+  &.disabled{
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+pre{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  margin-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+  & > li {
+    list-style: none;
+  }
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 icomoon;
+  text-rendering: auto;
+  font-size: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  line-height: inherit;
+  vertical-align: bottom;
+}
+
+.t-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.ace_scrollbar-v{
+  overflow: auto;
+}
+
+&.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  & > .form-title {
+    min-width: 70px;
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  &>.form-group{
+    flex: 1;
+  }
+}
+
+.icon-loading.rotate{
+  @-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+  }
+
+  -webkit-transform: rotate(360deg);
+  animation: rotation 1.0s linear infinite;
+  -moz-animation: rotation 1.0s linear infinite;
+  -webkit-animation: rotation 1.0s linear infinite;
+  -o-animation: rotation 1.0s linear infinite;
+}

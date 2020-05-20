@@ -1,0 +1,42 @@
+.terminal-wrapper{
+  background-color: #26292b;
+
+  &>.header{
+    background-color: #313335;
+    padding: 6px 9px;
+    color:#fff;
+
+    &>a{
+      font-size: 18px;
+      color:#fff;
+      margin-right: 15px;
+
+      i.icon-clear{
+        font-size:16px;
+        position: relative;
+        top:-2px;
+      }
+    }
+  }
+
+  &>.body{
+    min-height: 200px;
+    overflow: auto;
+    padding: 15px;
+
+    &>div{
+      margin-bottom: 15px;
+
+      &>a{
+        white-space: nowrap;
+      }
+
+      span,svg,div{
+        background-color: transparent !important;
+        color:rgba(255, 255, 255, 0.6) !important;
+        opacity: 1.0 !important;
+        border-color:rgba(255,255,255,0.1) !important;
+      }
+    }
+  }
+}

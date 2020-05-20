@@ -1,0 +1,40 @@
+.leftpanel-tabs-wrapper{
+  &>ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+
+    &>li{
+      padding: 6px 20px;
+
+      &>a{
+        color:#fff;
+        font-size: 18px;
+        display: block;
+        width: 18px;
+        height: 18px;
+
+        &.local-wrapper{
+          position: relative;
+
+          &>input{
+            width: 18px;
+            height: 18px;
+            opacity: 0;
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 2;
+          }
+
+          &>i{
+            position: absolute;
+            left:0;
+            top:0;
+          }
+        }
+      }
+    }
+  }
+}

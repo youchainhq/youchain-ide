@@ -1,0 +1,74 @@
+.rightpanel-compile-wrapper{
+  &>section{
+    border:solid 1px rgba(255,255,255,0.6);
+    padding: 15px;
+    margin-bottom: 15px;
+
+    &.compile-region{
+      .compile-options{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &.contract-region{
+      &>.detail-actions{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &>a{
+          color:#fff;
+          &>i{
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    &.warning-region,
+    &.error-region{
+      border: none;
+      padding: 0;
+      margin: 0;
+
+      &>div{
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 5px;
+        color:#000;
+      }
+    }
+
+    &.warning-region{
+      &>div{
+        background-color: #FF9800;
+      }
+    }
+    &.error-region{
+      &>div{
+        background-color: #F44336;
+      }
+    }
+  }
+}
+
+.contract-detail-wrapper{
+  &>section{
+    margin-bottom: 50px;
+
+    &>div{
+      max-width: 100%;
+      overflow-x: auto;
+
+      &.bytecode-wrapper,
+      &.runtime-wrapper{
+        &>div{
+          min-width: 23500px;
+        }
+      }
+    }
+  }
+}

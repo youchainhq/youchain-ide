@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "env",
+    "babel-preset-env",
+    "es2015",
+    "stage-2",
+    "stage-0",
+    "react"
+  ],
+  "plugins": [ "transform-runtime"]
+}
